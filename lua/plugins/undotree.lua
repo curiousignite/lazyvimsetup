@@ -1,4 +1,4 @@
 return {
-    "undotree",
+    "mbbill/undotree",
     lazy = false,
 }
