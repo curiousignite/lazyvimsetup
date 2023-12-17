@@ -1,0 +1,4 @@
+return {
+    "undotree",
+    lazy = false,
+}
