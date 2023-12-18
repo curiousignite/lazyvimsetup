@@ -26,6 +26,7 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
 --Explore
+keymap.set("n", "<leader>pv", vim.cmd.Ex)
 keymap.set("n", "<leader>pf", telescope.find_files, {})
 keymap.set("n", "<C-p>", telescope.git_files, {})
 keymap.set("n", "<leader>ps", function()
@@ -39,12 +40,15 @@ keymap.set("n", "<leader>rn", ":IncRename ")
 keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 --Smart Move
-keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
 
 --Yank
 keymap.set("v", "<leader>y", '"+y')
 keymap.set("n", "<leader>y", '"+y')
 keymap.set("n", "<leader>Y", '"+Y')
+
+--Misc
+--keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<cr>")
