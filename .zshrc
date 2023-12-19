@@ -100,8 +100,10 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls='ls -la --color=always'
-alias g='git'
-alias vim='nvim'
-alias clearls='clear && ls'
-alias clip='pwd | clip.exe'
+alias -g ls='ls -la --color=always'
+alias -g g='git'
+alias -g vim='nvim'
+alias -g clearls='clear && ls'
+alias -g clip='pwd | clip.exe'
+# alias -g f='vim $(fzf)'
+alias -g f='f(){vim $(fzf $@)};f' #runs fuzzyfinder sends it into neovim and passes all arguments at the end.
