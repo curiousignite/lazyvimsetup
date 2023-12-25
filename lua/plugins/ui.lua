@@ -10,7 +10,13 @@ return {
                 opts = { skip = true },
             })
             opts.presets.lsp_doc_border = true
+            -- opts.preset.command_palette = false
         end,
+    },
+    -- wilder
+    {
+        "gelguy/wilder.nvim",
+        modes = { ":", "/", "?" },
     },
     -- bufferline
     {

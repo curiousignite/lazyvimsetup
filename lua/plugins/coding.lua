@@ -11,4 +11,5 @@ return {
             end,
         },
     },
+    { "echasnovski/mini.surround", version = false },
 }
